@@ -177,7 +177,6 @@ services:
   mssql:
     image: mcr.microsoft.com/mssql/server:2019-latest
     container_name: MSSQL-Server
-    restart: unless-stopped
     ports:
       - "1433:1433"
     volumes:
