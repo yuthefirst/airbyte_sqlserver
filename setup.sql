@@ -25,3 +25,9 @@ GO
 
 INSERT INTO table_customer(customerName,customerAge) VALUES('John', 30); INSERT INTO table_customer(customerName,customerAge) VALUES('John', 30);
 GO
+
+SELECT * FROM Inventory
+GO
+
+SELECT * FROM table_customer
+GO

@@ -179,8 +179,6 @@ services:
     container_name: MSSQL-Server
     ports:
       - "1433:1433"
-    volumes:
-      - ~/apps/mssql/data:/var/lib/mssqlql/data
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Pass@123456
