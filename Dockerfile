@@ -8,4 +8,8 @@ WORKDIR /src
 
 COPY setup.sql ./setup.sql
 
+<<<<<<< HEAD
 RUN (/opt/mssql/bin/sqlservr --accept-eula & ) | grep -q "Service Broker manager has started" &&  /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pass@123456 -i setup.sql
+=======
+RUN (/opt/mssql/bin/sqlservr --accept-eula & ) | grep -q "Service Broker manager has started" &&  /opt/mssql-tools/bin/sqlcmd -S 127.0.0.1 -U sa -P Pass@123456 -i setup.sql
+>>>>>>> origin/master
