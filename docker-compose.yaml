@@ -181,10 +181,22 @@ services:
       - "1433:1433"
     volumes:
       - ~/apps/mssql/data:/var/lib/mssqlql/data
+      - ./setup.sql:/opt/scripts/setup.sql
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Pass@123456
-
+    command:
+      - /bin/bash
+      - -c
+      - |
+        # Launch MSSQL and send to background
+        /opt/mssql/bin/sqlservr &
+        # Wait 15 seconds for it to be available
+        sleep 15
+        # Run script in /scripts
+        /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Pass@123456 -i /opt/scripts/setup.sql
+        # So that the container doesn't shut down, sleep this thread
+        sleep infinity
 
 volumes:
   workspace:
