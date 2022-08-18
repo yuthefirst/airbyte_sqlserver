@@ -200,29 +200,12 @@ services:
 
   postgres:
     image: postgres
-    container_name: postgres-container
+    container_name: postgres
     restart: unless-stopped
     environment:
-      POSTGRES_USER : postgres
-      POSTGRES_PASSWORD : Pass@123456
-      PGDATA : /data/postgres
-#    volumes:
-#      - postgres:/data/postgres
+      POSTGRES_PASSWORD: mypass
     ports:
-      - "5432:5432"
-
-#  pgadmin:
-#    container_name: pgadmin_container
-#    image: dpage/pgadmin4
-#    environment:
-#      PGADMIN_DEFAULT_EMAIL: juliusng.cmc@gmail.com
-#      PGADMIN_DEFAULT_PASSWORD: Pass@123456
-#      PGADMIN_CONFIG_SERVER_MODE: 'False'
-#    volumes:
-#      - pgadmin:/var/lib/pgadmin
-#    ports:
-#      - "5050:5050"
-#    restart: unless-stopped
+      - 5431:5432
 
 
 
