@@ -1,0 +1,25 @@
+
+
+============================== 2022-08-19 06:23:44.713056 | 601daacf-c0e2-4cb7-b7d9-75ea403ca0a7 ==============================
+[0m06:23:44.713056 [info ] [MainThread]: Running with dbt=1.2.0
+[0m06:23:44.713056 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\nkduy3\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'dbt_postgres', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m06:23:44.714057 [debug] [MainThread]: Tracking: tracking
+[0m06:23:44.726057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CA1A4FA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CA1A4FBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CA1A4F6A0>]}
+[0m06:23:44.728057 [debug] [MainThread]: Starter project path: C:\Users\nkduy3\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m06:24:01.054194 [info ] [MainThread]: 
+Your new dbt project "dbt_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m06:24:01.055231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C9BD4B3A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CA1A9EBC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CA1A9EB60>]}
