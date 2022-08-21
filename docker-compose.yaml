@@ -179,7 +179,7 @@ services:
     container_name: MSSQL-Server
     restart: unless-stopped
     ports:
-      - "1433:1433"
+      - "1432:1433"
     volumes:
       - ~/apps/mssql/data:/var/lib/mssqlql/data
       - ./setup.sql:/opt/scripts/setup.sql
